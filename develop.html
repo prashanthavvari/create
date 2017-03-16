@@ -1,0 +1,35 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $('body').mouseover(function(){
+    $('.img1').animate({'opacity':'1'},500);
+	$(this).animate({"background":"url('eye2.gif')"},1000);
+	});
+})
+</script>
+   <style>
+      body{
+	  margin:0;
+	  background-color:black;
+	  z-index:-2;
+	  }
+	  .img1{
+	  height:500px;
+	  width:400px;
+	  background:url('eye.jpg');
+	  background-repeat:no-repeat;
+	  display:inline-block;
+	  opacity:0;
+	  z-index:2;
+	  }
+   </style>
+</head>
+<body>
+  
+  <div class="img1"></div>
+ <div class="img1">
+  </div>
+</body>
+</html>
