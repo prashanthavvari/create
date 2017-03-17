@@ -5,7 +5,10 @@
 $(document).ready(function(){
  $('body').mouseover(function(){
     $('.img1').animate({'opacity':'1'},500);
-	$(this).animate({"background":"url('eye2.gif')"},1000);
+	$('.img1').animate({'margin-top':'-5000px'},2000);
+	$('.img3').animate({"margin-top":"0px"},2000);
+	$('.img4').animate({'margin-top':'0px'},4000);
+	$('.img3').animate({"margin-top":"-5000px"},4000);
 	});
 })
 </script>
@@ -24,12 +27,35 @@ $(document).ready(function(){
 	  opacity:0;
 	  z-index:2;
 	  }
+	  .img3{
+	  height:100%;
+	  width:100%;
+	  display:inline-block;
+	  background:url('wer.gif');
+	  opacity:1;
+	  color:white;
+	  z-index:4;
+	  margin-top:-5000px;
+	  }
+	  .img4{
+	  height:100%;
+	  width:100%;
+	  background:url('uneasy.gif');
+	  background-size:100% 100%;
+	  background-repeat:no-repeat;
+	  display:inline-block;
+	  opacity:1;
+	  margin-top:-5000px;
+	  z-index:6;
+	  }
    </style>
 </head>
 <body>
   
   <div class="img1"></div>
- <div class="img1">
+ <div class="img1"></div>
+ <div class="img3"></div>
+ <div class="img4"></div>
   </div>
 </body>
 </html>
